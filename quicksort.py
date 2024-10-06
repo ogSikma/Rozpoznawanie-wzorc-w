@@ -1,4 +1,7 @@
 def quicksort(arr):
+'''
+I'd like to think it can be done better
+'''
     if len(arr) <= 1:
         return arr
     pivot = arr[0]
