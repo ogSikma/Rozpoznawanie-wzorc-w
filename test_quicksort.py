@@ -12,5 +12,8 @@ class TestQuicksort(unittest.TestCase):
     def test_reverse_sorted(self):
         self.assertEqual(quicksort([5,4,3,2,1]), [1,2,3,4,5])
 
+    def test_duplicates(self):
+        self.assertEqual(quicksort([5,1,2,1,5,3]), [1,1,2,3,5,5])
+
 if __name__ == '__main__':
     unittest.main()
